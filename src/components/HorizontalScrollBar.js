@@ -27,6 +27,7 @@ const RightArrow = () => {
 
 
 const HorizontalScrollBar = ({ data, bodyPart, setBodyPart }) => {
+    //data is array of body parts , body part is initialized to all it could be arms torso legs etc ,setBodyPart is used to change bodyPart
     return (
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
             {data.map(item => (

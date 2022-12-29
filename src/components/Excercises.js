@@ -33,6 +33,7 @@ const Excercises = ({ exercises, setExercises, bodyPart }) => {
     }
     fetchExerciseData();
   }, [bodyPart,setExercises])
+  //Body part may also be changed on <SearchExcercises/> Component
 
   return (
     <Box

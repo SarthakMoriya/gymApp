@@ -24,3 +24,5 @@ const Home = () => {
 }
 
 export default Home
+
+//In SearchExcercises our body part my be updated if not it will always be all body parts 
