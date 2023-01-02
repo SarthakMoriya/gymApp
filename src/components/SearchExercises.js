@@ -16,7 +16,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       console.log(bodyParts);
     }
     fetchExercisesData();
-  }, [])
+  }, [bodyParts])
 
   const handleSearch = async () => {
     if (search) {
@@ -96,6 +96,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           data={bodyParts}
           bodyPart={bodyPart}
           setBodyPart={setBodyPart}
+          isBodyPart={bodyPart}
         />
       </Box>
     </Stack>
