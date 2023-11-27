@@ -53,7 +53,7 @@ const Excercises = ({ exercises, setExercises, bodyPart }) => {
       >
         {currentExercises.map((exercise, i) => (<ExerciseCard key={i} exercise={exercise} />))}
       </Stack>
-      <Stack mt='100px' alignItems='center'>
+      { <Stack mt='100px' alignItems='center'>
         {exercises.length > 9 && (
           <Pagination
             color='standard'
@@ -65,7 +65,7 @@ const Excercises = ({ exercises, setExercises, bodyPart }) => {
             size='large'
           />
         )}
-      </Stack>
+      </Stack>}
     </Box>
   )
 }
